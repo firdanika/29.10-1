@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Moments</title>
+    <title>Image Gallery</title>
     <style>
         body {
             background-color: #ffccf9;
             font-family: Arial, sans-serif;
+            margin: 0;
             padding: 20px;
-            color: #333;
         }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        a {
+        h1 {
+            text-align: center;
             color: #ff88c2;
-            text-decoration: none;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Special Moments</h1>
-        <p>Our journey has been filled with so many unforgettable moments. Here’s to the times we’ve shared and the memories we’re still making...</p>
-        <a href="../first_page/index.html">Back to Options</a>
+    <h1>My Image Gallery</h1>
+    <div class="gallery">
+        <img src="../../9.4/login/us1.jpg" alt="Image 1">
+        <img src="../../9.4/login/us2.jpg" alt="Image 2">
+        <img src="../../9.4/login/us3.jpg" alt="Image 3">
+        <img src="../../9.4/login/us4.jpg" alt="Image 4">
+        <img src="../../9.4/login/us5.jpg" alt="Image 5">
     </div>
 </body>
 </html>
