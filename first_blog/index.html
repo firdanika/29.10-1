@@ -23,6 +23,19 @@
             color: #ff88c2;
             text-decoration: none;
         }
+        .play-button {
+            background-color: #ff88c2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .play-button:hover {
+            background-color: #ff66b2;
+        }
     </style>
 </head>
 <body> 
@@ -32,14 +45,15 @@
     </audio>
     <div class="container">
         <h1>Firdaus sayang sangat dengan Puteri Syafiqah</h1>
-        <p>Sayang, you tahu kan how much i love you? This is the first time in my life that I have truly loved someone like this, and I want you to know how serious I am about us. You are my happiness. Every time we call and talk, I happy tengok your senyum, your laughter, and the stories you share with me. Even when we call and don’t say much, just having you there makes me feel bersyukur i ade someone yg boleh teman i. Your presence in my life brings me so much joy, and I sangat sangat  appreciate every moment we spend together. </p>
+        <p>Sayang, you tahu kan how much I love you? This is the first time in my life that I have truly loved someone like this, and I want you to know how serious I am about us. You are my happiness. Every time we call and talk, I happy tengok your senyum, your laughter, and the stories you share with me. Even when we call and don’t say much, just having you there makes me feel bersyukur I ada someone yang boleh teman I. Your presence in my life brings me so much joy, and I sangat sangat appreciate every moment we spend together.</p>
+        <button class="play-button" onclick="playAudio()">Play Music</button>
         <a href="../first_page/index.html">Back to Options</a>
     </div>
-     <script>
-      window.addEventListener('DOMContentLoaded', (event) => {
+    <script>
+      function playAudio() {
         var audio = document.getElementById('background-music');
         audio.play();
-      });
+      }
     </script>
 </body>
 </html>
