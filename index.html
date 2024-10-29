@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,34 +13,49 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            flex-direction: column;
         }
         .container {
             text-align: center;
+            margin-top: -50px;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
         }
         input[type="text"] {
-            padding: 10px;
+            padding: 12px;
             font-size: 18px;
-            width: 300px;
-            border: 2px solid #ff88c2;
-            border-radius: 20px;
+            width: 400px;
+            border: 1px solid #ff88c2;
+            border-radius: 25px;
+            text-align: center;
+            color: #555;
+            background-color: #fff;
         }
         .search-button {
-            padding: 10px 20px;
+            padding: 10px 25px;
             font-size: 18px;
             color: #fff;
             background-color: #ff88c2;
             border: none;
-            border-radius: 20px;
+            border-radius: 25px;
             cursor: pointer;
+            margin-top: 15px;
+        }
+        .search-button:hover {
+            background-color: #ff66b2;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>How Much You Mean to Me</h1>
+        <!-- Logo Placeholder - Replace with your logo file -->
+        <img src="logo.png" alt="Logo" class="logo">
+        
         <input type="text" placeholder="how much you mean to me" readonly>
-        <br><br>
-        <button class="search-button" onclick="window.location.href='first_page/index.html'">Search</button>
+        <br>
+        <button class="search-button" onclick="window.location.href='options/index.html'">Search</button>
     </div>
 </body>
 </html>
