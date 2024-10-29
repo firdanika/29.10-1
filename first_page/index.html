@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,29 +11,46 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #ff88c2;
+            margin-bottom: 20px;
         }
         .options-container {
-            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
         }
         .option {
             display: block;
             padding: 15px;
-            margin: 10px;
-            font-size: 24px;
+            margin: 10px 0;
+            font-size: 20px;
             color: #ff88c2;
             text-decoration: none;
             border: 2px solid #ff88c2;
             border-radius: 20px;
-            width: 250px;
             text-align: center;
             background-color: #fff;
             cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .option:hover {
+            background-color: #ff88c2;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .option:active {
+            transform: scale(0.95);
         }
     </style>
 </head>
 <body>
+    <h1>Choose an Option</h1>
     <div class="options-container">
         <button class="option" onclick="window.location.href='../first_blog/index.html'">Memories</button>
         <button class="option" onclick="window.location.href='../second_blog/index.html'">Reasons I Care</button>
